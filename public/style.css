@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    background-color: #020617;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 50px;
+    min-height: 20vh;
+}
+
+#home h1 span {
+    color: #38bdf8;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0ea5e9;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    padding: 10px 20px;
+    background: #1e293b;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* PROJECTS SECTION */
+#projects {
+    background-color: #020617;
+}
+.projects-section {
+  padding: 80px 10%;
+  background-color: #0f172a; /* dark modern bg */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #e5e7eb;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-stack span {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #020617;
+  background: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+  background: #0ea5e9;
+}
+
+/* Contacts */ 
+.contact-title {
+  font-family: 'Pacifico', cursive;
+}
+

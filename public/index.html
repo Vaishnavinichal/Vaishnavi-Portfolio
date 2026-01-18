@@ -1,146 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vaishnavi Nichal — AI/ML Developer</title>
+    <meta charset="UTF-8">
+    <title>Vaishnavi | Portfolio</title>
 
-  <!-- Tailwind CDN for quick demo (no build step) -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-white antialiased" style="font-family: 'Fira Code', monospace;">
-  <nav class="bg-gray-800/60 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-500 flex items-center justify-center font-bold">VN</div>
-        <div>
-          <h1 class="text-lg font-semibold">Vaishnavi Nichal</h1>
-          <p class="text-xs text-gray-300">AI/ML Undergraduate specializing in Machine Learning & NLP</p>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">AMBADNYA</h2>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" data-aos="fade-up">
+        <h1>Hello, I'm <span>Vaishnavi</span></h1>
+        <p>Aspiring AI / ML Engineer</p>
+        <button>Download Resume</button>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" data-aos="fade-right">
+        <h2>About Me</h2>
+        <p>
+            I am a AIML student passionate about building real-world projects.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" data-aos="fade-left">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">Python</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
         </div>
-      </div>
-
-      <ul class="hidden md:flex gap-6 text-sm text-gray-200">
-        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
-        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
-        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main class="max-w-5xl mx-auto px-6 py-12">
-    <!-- Hero -->
-    <section class="py-12 text-center">
-      <h2 class="text-4xl md:text-5xl font-extrabold">Hi, I'm <span class="text-blue-400">Vaishnavi Nichal</span></h2>
-      <p class="text-gray-300 mt-4 max-w-2xl mx-auto">AI/ML Engineer & NLP enthusiast building accessible machine learning applications. Experienced with Python, TensorFlow, scikit-learn, and practical cloud simulations.</p>
-      <div class="mt-6 flex justify-center gap-4">
-        <a href="#projects" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-md font-medium">View Projects</a>
-        <a href="/files/resume.pdf" class="px-6 py-3 border border-gray-700 rounded-md text-sm">Download Resume</a>
-      </div>
     </section>
+    <!-- PROJECT SECTION -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title" data-aos="fade-up">Projects</h2>
 
-    <!-- About -->
-    <section id="about" class="mt-12 bg-gray-800/40 p-6 rounded-lg">
-      <h3 class="text-2xl font-semibold">About Me</h3>
-      <p class="text-gray-300 mt-3 leading-relaxed">I'm an AI & ML undergraduate with hands-on experience in Python, NLP pipelines, and ML model development. I have completed virtual internships with AWS, Tata, and Accenture and worked on projects such as spam detection, text summarization, and accessibility-focused voice bots.</p>
-      <p> Building intelligent systems with ML, NLP & Python.</p>
-    </section>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Lane Detection System Using OpenCV</h3>
 
-    <!-- Skills -->
-    <section id="skills" class="mt-8">
-      <h3 class="text-2xl font-semibold mb-4">Skills</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-        <div class="p-3 bg-gray-800 rounded">Python, C/C++</div>
-        <div class="p-3 bg-gray-800 rounded">Machine Learning</div>
-        <div class="p-3 bg-gray-800 rounded">NLP (NLTK, TF-IDF)</div>
-        <div class="p-3 bg-gray-800 rounded">TensorFlow / Keras</div>
-        <div class="p-3 bg-gray-800 rounded">Pandas / NumPy</div>
-        <div class="p-3 bg-gray-800 rounded">MySQL / MongoDB</div>
-        <div class="p-3 bg-gray-800 rounded">HTML / CSS / JS / NodeJs</div>
-        <div class="p-3 bg-gray-800 rounded">Git / GitHub</div>
-      </div>
-    </section>
+                <p>
+                    A computer vision–based lane detection system that processes
+                    video files or webcam input, applies edge detection and ROI masking,
+                    and overlays detected lanes on frames using OpenCV.
+                </p>
 
-    <!-- Projects -->
-    <section id="projects" class="mt-10">
-      <h3 class="text-2xl font-semibold mb-4">Projects</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <article class="p-5 bg-gray-800 rounded">
-          <h4 class="font-bold text-lg">Spam Email Detection</h4>
-          <p class="text-gray-300 mt-2">Naive Bayes classifier using TF-IDF trained on 1,000+ samples. Achieved 95%+ accuracy.</p>
-          <div class="mt-3 flex gap-2 text-sm">
-            <span class="px-2 py-1 bg-gray-700 rounded">Python</span>
-            <span class="px-2 py-1 bg-gray-700 rounded">scikit-learn</span>
-            <span class="px-2 py-1 bg-gray-700 rounded">NLP</span>
-          </div>
-        </article>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>OpenCV</span>
+                    <span>NumPy</span>
+                    <span>Matplotlib</span>
+                </div>
 
-        <article class="p-5 bg-gray-800 rounded">
-          <h4 class="font-bold text-lg">Text & Voice Conversion Bot</h4>
-          <p class="text-gray-300 mt-2">Speech→text and text→speech assistant using SpeechRecognition & pyttsx3 for accessibility-focused interactions.</p>
-        </article>
-
-        <article class="p-5 bg-gray-800 rounded">
-          <h4 class="font-bold text-lg">Text Summarization Tool</h4>
-          <p class="text-gray-300 mt-2">Extractive summarizer using POS-tagging and frequency analysis across 100+ documents.</p>
-        </article>
-
-        <article class="p-5 bg-gray-800 rounded">
-          <h4 class="font-bold text-lg">Hotel Management System</h4>
-          <p class="text-gray-300 mt-2">Python + MySQL system handling bookings, check-ins, billing and room tracking.</p>
-        </article>
-      </div>
-    </section>
-    <!-- INTERNSHIPS -->
-    <section id="internships" class="mt-14">
-      <h3 class="text-2xl font-semibold mb-5">Internships</h3>
-
-      <div class="space-y-5">
-
-      <div class="p-5 bg-gray-800 rounded-lg">
-        <h4 class="text-xl font-bold text-blue-300">AWS APAC – Solutions Architect Virtual Internship</h4>
-        <p class="text-gray-300 mt-2">
-          Built scalable cloud architecture using Elastic Beanstalk and documented cost optimization strategies.
-        </p>
-        <span class="text-xs text-gray-400">June 2025</span>
-      </div>
-
-      <div class="p-5 bg-gray-800 rounded-lg">
-        <h4 class="text-xl font-bold text-blue-300">Tata Group – Data Analytics Virtual Internship</h4>
-        <p class="text-gray-300 mt-2">
-          Performed EDA with GenAI tools, identified delinquency patterns & cleaned structured datasets for modeling.
-        </p>
-        <span class="text-xs text-gray-400">July 2025</span>
-      </div>
-
-      <div class="p-5 bg-gray-800 rounded-lg">
-        <h4 class="text-xl font-bold text-blue-300">Accenture – Software Engineering Simulation</h4>
-        <p class="text-gray-300 mt-2">
-          Completed SDLC-based tasks: debugging, sprint planning, writing secure code & unit testing.
-        </p>
-        <span class="text-xs text-gray-400">June 2025</span>
-      </div>
-
-      <div class="p-5 bg-gray-800 rounded-lg">
-        <h4 class="text-xl font-bold text-blue-300">Microsoft + LinkedIn – Career Essentials in Generative AI</h4>
-        <p class="text-gray-300 mt-2">
-          Trained in LLM concepts, prompt engineering, responsible AI & enterprise GenAI applications.
-        </p>
-        <span class="text-xs text-gray-400">2025</span>
-      </div>
-
-      </div>
+                <div class="project-links">
+                    <a
+                        href="https://github.com/Vaishnavinichal/Lane-Detection-System-Using-OpenCV"
+                        target="_blank"
+                    >       
+                       View on GitHub →
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
 
-    <!-- Contact -->
-    <section id="contact" class="mt-10 p-6 bg-gray-800/30 rounded">
-      <h3 class="text-2xl font-semibold">Contact</h3>
-      <p class="text-gray-300 ">Email: <a class="text-white font-medium" href="mailto:vaishnavi.nichal0003@gmail.com">vaishnavi.nichal0003@gmail.com</a></p>
-      <p class="text-gray-300 ">Github: <a class="text-white font-medium" href="https://github.com/Vaishnavinichal">Vaishnavi Nichal</a></p> 
-      <p class="text-gray-300">Location: Belgaum, Karnataka</p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" data-aos="zoom-in">
+        <h2 class="contact-title">Contact Me</h2>
+        <p>Email: vaishnavi.nichal0003@gmail.com</p>
     </section>
 
-    <footer class="mt-12 text-center text-sm text-gray-400">© 2025 Vaishnavi Nichal — Built with Tailwind & Node.js</footer>
-  </main>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Your JS -->
+    <script src="script.js"></script>
 </body>
 </html>
