@@ -1,20 +1,27 @@
-# Vaishnavi Nichal — Portfolio (Tailwind CDN + Node/Express)
+# Vaishnavi Nichal — Portfolio
 
-This is a minimal developer portfolio using Tailwind via CDN for quick demo and Node/Express as a static server.
+This repository contains my personal portfolio website showcasing my skills, projects, and contact information.
 
-## How to run locally
+## Live Portfolio
+ https://vaishnavi-portfolio-iai7.onrender.com
 
-1. Install dependencies:
-   npm install
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- AOS (Animate On Scroll)
+- Node.js
+- Express.js
+- Render (Deployment)
 
-2. Start the server:
-   npm start
+## Features
+- Clean and modern UI
+- Smooth scroll-based animations using AOS
+- Project showcase with GitHub links
+- Resume download option
+- Fully responsive design
 
-3. Open http://localhost:3000
-
-## Deploying live (Render / Heroku / Railway)
-- Push this repo to GitHub.
-- Connect the repository to Render (or Railway/Heroku).
-- For Render: create a new Web Service, use 'npm start' as the start command.
-- Ensure PORT is read from environment (server.js does this).
-
+## Run Locally
+```bash
+npm install
+node server.js
