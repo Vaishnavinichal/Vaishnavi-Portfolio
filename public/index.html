@@ -19,6 +19,7 @@
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
@@ -27,33 +28,55 @@
     <section id="home" data-aos="fade-up">
         <h1>Hello, I'm <span>Vaishnavi</span></h1>
         <p>Aspiring AI / ML Engineer</p>
-        <button>Download Resume</button>
+        <a href="files/Vaishnavi P Nichal.pdf" download>
+            <button>Download Resume</button>
+        </a>
+
+        
     </section>
 
     <!-- ABOUT SECTION -->
     <section id="about" data-aos="fade-right">
         <h2>About Me</h2>
         <p>
-            I am a AIML student passionate about building real-world projects.
+            I am an AIML student who enjoys exploring ML DS and AI empowered solutions
+            I love learning through projects and continuosly improving my technical skills.
         </p>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="skills" data-aos="fade-left">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">Python</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-        </div>
+    <section id="skills" class="skills-section">
+    <h2 class="section-title" data-aos="fade-left">Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">Python</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Deep Learning</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">PowerBI</div>
+        <div class="skill">NLP</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Matplotlib</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">OpenCV</div>
+        <div class="skill">Scikit-learn</div>
+        <div class="skill">C/C++</div>
+    </div>
+    
     </section>
+
+
     <!-- PROJECT SECTION -->
     <section id="projects" class="projects-section">
         <h2 class="section-title" data-aos="fade-up">Projects</h2>
 
         <div class="projects-container">
+            <!--Project 1 Opencv-->
             <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                 <h3>Lane Detection System Using OpenCV</h3>
 
@@ -79,6 +102,51 @@
                     </a>
                 </div>
             </div>
+            <!--Project 2 OVA-->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                 <h3>Offline Voice Assistant</h3>
+
+                <p>
+                    Developed an offline multilingual voice assistant using OpenAI Whisper for speech recognition and pyttsx3 for text-to
+                    speech. Implemented audio normalization and push-to-talk interaction to improve recognition accuracy on CPU-based 
+                    systems.
+                </p>
+
+                 <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Whisper ASR</span>
+                    <span>Text-to-Speech</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Vaishnavinichal/Offline-Voice-Assistant" target="_blank">
+                         View on GitHub →
+                    </a>
+                </div>
+            </div>
+            <!--Project 3 SR-->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <h3>Speech Recognition System</h3>
+                <p>
+                    Built an offline speech recognition system supporting microphone and audio file input. Focused on handling real-world 
+                    audio issues such as low microphone gain and transcription accuracy using Whisper. 
+                    <p>1.Microphone enabled:Display text and also save audio file</p>
+                    <p>2.Input files: Convert audio to text and then re-read it</p>
+                </p>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>whisper</span>
+                    <span>pyttsx3</span>
+                    
+                </div>  
+
+                <div class="project-links">
+                    <a href="https://github.com/Vaishnavinichal/Speech-Recognition-System" target="_blank">
+                    View on GitHub →
+                    </a>
+                </div>
+            </div>  
         </div>
     </section>
 
